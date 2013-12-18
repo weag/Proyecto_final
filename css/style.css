@@ -1,0 +1,83 @@
+body 
+{
+	position: relative;
+	left: 0;
+	transition:1s ease;
+	overflow-x: hidden; /*para sacar la barra de desplazamiento*/
+}
+
+.menu
+{
+	position: fixed;
+	left:-180px;
+	transition:1s ease;
+	width: 180px;
+	height: 100%;
+}
+
+.menu a{
+	display: block;
+	padding: 10px 20px;
+}
+
+.button {
+	padding: 5px 15px;
+	position: fixed;
+}
+
+
+	
+/**********EXTRA************/
+.body-push{
+	left: 180px;
+}
+
+.menu-push{
+	left: 0;
+}
+
+/******HELPERS******/
+
+.bck-theme{
+	background-color: #008DFF;
+}
+
+.color-white{
+	color: black;
+}
+
+.photo{
+	background-image: url("../images/bg-header-sm.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 288px;
+}
+
+
+@media (min-width: 430px){
+	.photo{
+		background-image: url("../images/bg-header-md.jpg");
+	}
+}
+
+@media (min-width: 575px){
+
+	.menu{
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
+
+	.menu a{
+		display: inline-block;
+	}
+
+	.button{
+		display: none;
+	}
+
+	.photo{
+		background-image: url("../images/bg-header.jpg");
+	}
+}

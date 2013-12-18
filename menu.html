@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<nav class="menu bck-theme color-white">
+		<a href="#inicio">Inicio</a>
+		<a href="#empresa">Quienes Somos</a>
+		<a href="#contacto">Productos</a>
+		<a href="#contacto">Ubicacion</a>
+		<a href="#contacto">Contactenos</a>
+	</nav>
+	<a class="button bck-theme color-white" href="#">Ver Menú</a>
+	<div class="slider">
+		<div class="photo">			
+		</div>
+	</div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, repellendus quae quaerat provident neque? 
+		Delectus, dolorem, ipsa, quaerat sunt quos accusantium dignissimos dolor nesciunt quam recusandae maxime 
+		laborum ex deleniti!
+	</p>
+	<script src="bower_components/jquery/jquery.js"></script>
+	<script>
+	$(document).on("ready",function(){
+		$(".button").on("click", function(){
+			$(".menu").toggleClass("menu-push");
+			$("body").toggleClass("body-push");
+		})
+	})
+	</script>
+</body>
+</html>
